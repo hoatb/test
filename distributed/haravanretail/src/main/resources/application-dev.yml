@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    initialize: true
+    url: jdbc:postgresql://localhost:5432/haravan_retail
+    username: postgres
+    password: Abcd1234
+
+haravan:
+  batchRequestSleep: 300
+  accessToken: 6F863EC878FFB113629C9D782CE3080C137179E1D8A431B8BFCE03518602C6DB
+  productsEndpoint: https://apis.haravan.com/com/products.json
+  productEndpoint: https://apis.haravan.com/com/products/%s.json
+  provincesEndpoint: https://apis.haravan.com/com/countries/241/provinces.json
+  districtsEndpoint: https://apis.haravan.com/com/provinces/%s/districts.json
+  wardsEndpoint: https://apis.haravan.com/com/districts/%s/wards.json

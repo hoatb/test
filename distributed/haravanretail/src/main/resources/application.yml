@@ -1,0 +1,32 @@
+spring:
+  profiles:
+    active: '@spring.profiles.active@'
+  application:
+    name: haravan-retail
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: false
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        default_schema: retail
+        dialect: org.hibernate.dialect.PostgreSQL95Dialect
+        jdbc:
+          batch_size: 1000
+        order_inserts: true
+        enable_lazy_load_no_trans: true
+        event:
+          merge:
+            entity_copy_observer: allow
+    open-in-view: false
+
+### spring documents
+springdoc:
+  swagger-ui:
+    disable-swagger-default-url: true
+    urls[0]:
+      name: Retail APIs
+      url: /v3/api-docs

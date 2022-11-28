@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <groupId>com.betall.core.retail</groupId>
+        <artifactId>retail-haravan</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <name>Haravan Related</name>
+    <description>Haravan Related</description>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>haravan-related-pom</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>haravan_product_context</module>
+        <module>haravan_repositories</module>
+        <module>haravan_infrastructure</module>
+        <module>haravanaddresscontext</module>
+        <module>haravan-order-context</module>
+    </modules>
+</project>
